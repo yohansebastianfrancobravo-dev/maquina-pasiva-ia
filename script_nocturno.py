@@ -1,23 +1,25 @@
 import os
 from groq import Groq
 
-# Configurar el cliente con la API Key guardada de forma segura en GitHub
+# 1. Configurar el cliente con la API Key guardada de forma segura en GitHub
 CLIENTE = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 MI_ENLACE_AFILIADO = "https://tu-enlace-de-afiliado.com" # Cambia esto por tu enlace real luego
 
 def generar_pagina_monetizable():
+    print("🤖 Iniciando enjambre de agentes en la nube...")
+    
     # Agente 1: Investigador de Tendencias de Software
     prompt_tendencia = (
         "Identifica un software, herramienta de inteligencia artificial o app moderna que la gente esté buscando mucho "
         "para mejorar su productividad o negocio. Devuelve solo el nombre en una sola línea."
     )
     res_1 = CLIENTE.chat.completions.create(
-        messages=[{"role": "user", "content": prompt_tendence}],
+        messages=[{"role": "user", "content": prompt_tendencia}],
         model="qwen/qwen3.8-27b",
         temperature=0.5,
         max_tokens=50
     )
-    producto = res_1.choices.message.content.strip()
+    producto = res_1.choices[0].message.content.strip()
 
     # Agente 2: Redactor SEO
     prompt_articulo = (
@@ -31,7 +33,7 @@ def generar_pagina_monetizable():
         temperature=0.6,
         max_tokens=500
     )
-    contenido_html = res_2.choices.message.content
+    contenido_html = res_2.choices[0].message.content
 
     # Crear la estructura de la página web index.html
     html_final = f"""<!DOCTYPE html>
