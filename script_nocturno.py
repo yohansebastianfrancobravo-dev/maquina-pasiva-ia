@@ -19,7 +19,8 @@ def generar_pagina_monetizable():
         temperature=0.5,
         max_tokens=50
     )
-    producto = res_1.choices.message.content.strip()
+    # Corrección de índice obligatoria para la API
+    producto = res_1.choices[0].message.content.strip()
 
     # Agente 2: Redactor SEO
     prompt_articulo = (
@@ -34,7 +35,8 @@ def generar_pagina_monetizable():
         temperature=0.6,
         max_tokens=500
     )
-    contenido_html = res_2.choices.message.content
+    # Corrección de índice obligatoria para la API
+    contenido_html = res_2.choices[0].message.content
 
     # Crear la estructura de la página web index.html
     html_final = f"""<!DOCTYPE html>
@@ -64,3 +66,4 @@ def generar_pagina_monetizable():
 
 if __name__ == "__main__":
     generar_pagina_monetizable()
+    
