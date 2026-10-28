@@ -3,7 +3,7 @@ from groq import Groq
 
 # 1. Configurar el cliente con la API Key guardada de forma segura en GitHub
 CLIENTE = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-MI_ENLACE_AFILIADO = "https://tu-enlace-de-afiliado.com" # Cambia esto por tu enlace real luego
+MI_ENLACE_AFILIADO = "https://amzn.to/4Bvi7Uj" # Cambia esto por tu enlace real luego
 
 def generar_pagina_monetizable():
     print("🤖 Iniciando enjambre de agentes en la nube...")
