@@ -6,7 +6,7 @@ from groq import Groq
 CLIENTE = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # Tu enlace de afiliado real de Amazon para la Cricut StickerPix
-MI_ENLACE_AFILIADO = "https://amzn.to"
+MI_ENLACE_AFILIADO = "https://amzn.to/4Bvi7Uj"
 
 def generar_pagina_monetizable():
     # Agente 1: Especialista en Ideas de Negocio y Manualidades
@@ -16,13 +16,16 @@ def generar_pagina_monetizable():
         "para ganar dinero desde casa, crear manualidades personalizadas o emprender. "
         "Devuelve SOLO el título en una sola línea, sin comillas ni textos extra."
     )
+    
+    print("[IA] Agente 1 generando título creativo...")
     res_1 = CLIENTE.chat.completions.create(
         messages=[{"role": "user", "content": prompt_enfoque}],
         model="qwen/qwen3.8-27b",
         temperature=0.7,
         max_tokens=50
     )
-    titulo_articulo = res_1.choices.message.content.strip()
+    # CORRECCIÓN: Añadido [0] para leer la lista correctamente
+    titulo_articulo = res_1.choices[0].message.content.strip()
 
     # Agente 2: Redactor SEO Avanzado
     prompt_articulo = (
@@ -33,13 +36,16 @@ def generar_pagina_monetizable():
         f"Al final del texto, incluye EXACTAMENTE este llamado a la acción utilizando este código HTML: "
         f"<br><br><div style='text-align:center;'><a href='{MI_ENLACE_AFILIADO}' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>"
     )
+    
+    print("[IA] Agente 2 redactando el contenido de la tarjeta...")
     res_2 = CLIENTE.chat.completions.create(
         messages=[{"role": "user", "content": prompt_articulo}],
         model="qwen/qwen3.8-27b",
         temperature=0.6,
         max_tokens=500
     )
-    contenido_html = res_2.choices.message.content
+    # CORRECCIÓN: Añadido [0] para leer la lista correctamente
+    contenido_html = res_2.choices[0].message.content
 
     # LÓGICA DE MEMORIA: Leer publicaciones de días anteriores para acumularlas
     posts_anteriores = ""
@@ -188,4 +194,4 @@ def generar_pagina_monetizable():
 
 if __name__ == "__main__":
     generar_pagina_monetizable()
-    
+            
