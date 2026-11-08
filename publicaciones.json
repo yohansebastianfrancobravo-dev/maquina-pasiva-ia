@@ -1,5 +1,14 @@
 [
   {
+    "id": 12,
+    "tema_id": "phishing",
+    "fecha": "2026-11-08",
+    "titulo": "Cómo reconocer mensajes de phishing",
+    "contenido": "El phishing es una técnica de ingeniería social donde los atacantes se hacen pasar por entidades confiables para robar información personal o financiera. Su objetivo es generar urgencia o miedo para que actúes sin pensar.\n\nPara proteger tus datos, mantén la calma ante cualquier solicitud inesperada. Verifica siempre la dirección del remitente y busca errores ortográficos o gramaticales, comunes en estos correos. Nunca hagas clic en enlaces sospechosos ni descargues archivos adjuntos de fuentes desconocidas. Si necesitas iniciar sesión, escribe manualmente la dirección web oficial en tu navegador.\n\nAdemás, desconfía de mensajes que presionen para que actúes de inmediato o te pidan contraseñas y códigos de verificación por correo electrónico. Las instituciones legítimas nunca solicitan estas credenciales de esa manera. Ante la duda, contacta directamente a la organización a través de canales oficiales. La prevención y la atención constante son tus mejores herramientas contra este tipo de amenazas digitales.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 11,
     "tema_id": "permisos",
     "fecha": "2026-11-07",
