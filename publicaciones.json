@@ -1,5 +1,14 @@
 [
   {
+    "id": 10,
+    "tema_id": "errores_ia",
+    "fecha": "2026-11-08",
+    "titulo": "Por qué la inteligencia artificial puede equivocarse",
+    "contenido": "La inteligencia artificial no piensa como un humano, sino que procesa datos para predecir respuestas. Por eso, puede cometer errores. Si el sistema se entrena con información incompleta o sesgada, sus resultados reflejarán esas deficiencias. Además, a menudo carece de sentido común o contexto real.\n\nPara usarla de forma segura, sigue estos consejos prácticos. Primero, verifica siempre la información crítica, como datos médicos o financieros, con fuentes fiables. Segundo, revisa la lógica de las respuestas; a veces suenan convincentes pero son incorrectas. Tercero, sé específico en tus preguntas para reducir la ambigüedad. Y cuarto, recuerda que la IA es una herramienta de apoyo, no una autoridad absoluta. Mantén tu criterio propio y usa la tecnología como un asistente que te ayuda a trabajar más rápido, pero nunca como la única fuente de verdad. La combinación de tu juicio humano y la capacidad de procesamiento de la máquina es la clave para obtener resultados útiles y confiables en cualquier tarea.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 9,
     "fecha": "2026-11-08",
     "titulo": "Cómo proteger tus datos personales en el día a día",
