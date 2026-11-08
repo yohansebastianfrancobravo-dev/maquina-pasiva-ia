@@ -2,7 +2,8 @@ import os
 import json
 import re
 import random
-from datetime import date
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from groq import Groq
 
@@ -138,7 +139,7 @@ def generar_publicacion():
     nueva = {
         "id": nuevo_id,
         "tema_id": tema_id,
-        "fecha": date.today().isoformat(),
+        "fecha": datetime.now(ZoneInfo("America/Bogota")).date().isoformat(),
         "titulo": titulo,
         "contenido": contenido,
         "categoria": "Tecnología",
