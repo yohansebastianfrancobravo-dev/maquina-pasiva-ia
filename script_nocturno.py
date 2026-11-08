@@ -1,39 +1,99 @@
 import os
 import json
 import re
+import random
 from datetime import date
 from pathlib import Path
 from groq import Groq
 
-RUTA_PUBLICACIONES = Path("publicaciones.json")
+RUTA = Path("publicaciones.json")
 MODELO = "qwen/qwen3.8-27b"
 
+TEMAS = [
+    ("phishing", "Cómo reconocer mensajes de phishing"),
+    ("contrasenas", "Cómo crear contraseñas seguras"),
+    ("verificacion", "Qué es la verificación en dos pasos"),
+    ("copias", "Por qué es importante hacer copias de seguridad"),
+    ("wifi", "Consejos para utilizar redes Wi-Fi públicas"),
+    ("permisos", "Cómo revisar los permisos de las aplicaciones"),
+    ("actualizaciones", "Por qué debes mantener actualizado tu celular"),
+    ("almacenamiento", "Cómo organizar el almacenamiento del teléfono"),
+    ("bateria", "Hábitos para cuidar la batería del celular"),
+    ("codigos_qr", "Precauciones al utilizar códigos QR"),
+    ("bluetooth", "Cómo funciona la conexión Bluetooth"),
+    ("nube", "Qué es el almacenamiento en la nube"),
+    ("inteligencia_artificial", "Cómo funciona la inteligencia artificial"),
+    ("errores_ia", "Por qué la inteligencia artificial puede equivocarse"),
+    ("huella_digital", "Qué es la huella digital en Internet"),
+    ("accesibilidad", "Funciones de accesibilidad en los teléfonos"),
+    ("archivos", "Cómo organizar archivos digitales"),
+    ("notificaciones", "Cómo administrar las notificaciones del celular"),
+    ("navegadores", "Para qué sirven las actualizaciones del navegador"),
+    ("estafas", "Señales para identificar posibles estafas digitales")
+]
 
-def generar_texto(cliente, instrucciones, max_tokens):
-    respuesta = cliente.chat.completions.create(
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "Eres redactor de TECHNOVA, un sitio de tecnología en español. "
-                    "Escribe información clara, útil y responsable. "
-                    "No inventes características, precios, pruebas, estadísticas, "
-                    "marcas, enlaces ni noticias. No prometas ganancias. "
-                    "No generes etiquetas HTML ni enlaces comerciales."
-                )
-            },
-            {"role": "user", "content": instrucciones}
-        ],
-        model=MODELO,
-        temperature=0.4,
-        max_tokens=max_tokens
-    )
+PROHIBIDO = re.compile(
+    r"cricut|stickerpix|gana dinero|ganar dinero|ingresos|"
+    r"negocio|emprendimiento|monetizar|rentable|"
+    r"oferta imperdible|compra ahora|hazte rico",
+    re.IGNORECASE
+)
 
-    texto = respuesta.choices[0].message.content
-    if not texto:
-        raise ValueError("La IA devolvió contenido vacío.")
 
-    return texto.strip()
+def cargar_publicaciones():
+    if not RUTA.exists():
+        return []
+
+    with RUTA.open("r", encoding="utf-8") as archivo:
+        datos = json.load(archivo)
+
+    if not isinstance(datos, list):
+        raise ValueError("publicaciones.json debe contener una lista.")
+
+    return datos
+
+
+def generar_articulo(cliente, titulo):
+    for intento in range(3):
+        respuesta = cliente.chat.completions.create(
+            model=MODELO,
+            temperature=0.35,
+            max_tokens=350,
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "Eres el redactor educativo de TECHNOVA. "
+                        "Escribes en español claro y sencillo. "
+                        "No haces publicidad ni vendes productos. "
+                        "No inventes estadísticas, noticias, precios "
+                        "ni características técnicas. "
+                        "No prometas dinero ni resultados garantizados. "
+                        "No uses HTML ni enlaces."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": (
+                        f"Escribe un artículo educativo titulado: {titulo}. "
+                        "Extensión: entre 100 y 160 palabras. "
+                        "Explica el concepto con claridad y ofrece consejos "
+                        "generales y prácticos. No inventes datos. "
+                        "Devuelve únicamente el artículo."
+                    )
+                }
+            ]
+        )
+
+        contenido = respuesta.choices[0].message.content or ""
+        contenido = re.sub(r"<[^>]*>", "", contenido).strip()
+
+        if contenido and not PROHIBIDO.search(contenido):
+            return contenido
+
+        print(f"Contenido rechazado. Intento {intento + 2}...")
+
+    raise ValueError("No se pudo generar un artículo válido.")
 
 
 def generar_publicacion():
@@ -43,64 +103,41 @@ def generar_publicacion():
         raise RuntimeError("Falta configurar GROQ_API_KEY.")
 
     cliente = Groq(api_key=api_key)
+    publicaciones = cargar_publicaciones()
 
-    print("[TECHNOVA] Generando tema...")
-    titulo = generar_texto(
-        cliente,
-        (
-            "Propón un título breve para un artículo educativo de tecnología. "
-            "Puede tratar sobre seguridad digital, cuidado de dispositivos, "
-            "uso responsable de aplicaciones o consejos tecnológicos generales. "
-            "No promociones productos ni prometas resultados. "
-            "Devuelve únicamente el título."
-        ),
-        60
-    )
+    usados = {
+        p.get("tema_id")
+        for p in publicaciones
+        if isinstance(p, dict)
+    }
 
-    titulo = re.sub(r"[\r\n]+", " ", titulo).strip().strip('"')
-    titulo = titulo[:120]
+    disponibles = [
+        tema for tema in TEMAS
+        if tema[0] not in usados
+    ]
 
-    if not titulo:
-        raise ValueError("No se pudo generar un título válido.")
+    if not disponibles:
+        raise RuntimeError("Se agotaron los temas disponibles.")
 
-    print("[TECHNOVA] Redactando artículo...")
-    contenido = generar_texto(
-        cliente,
-        (
-            f"Escribe un artículo educativo en español sobre: {titulo}. "
-            "Máximo 180 palabras, con párrafos cortos y consejos prácticos. "
-            "No inventes datos, especificaciones, precios ni noticias. "
-            "No afirmes que un producto tiene funciones concretas. "
-            "No incluyas HTML, enlaces, publicidad ni promesas de dinero. "
-            "Devuelve solamente el artículo."
-        ),
-        350
-    )
+    tema_id, titulo = random.choice(disponibles)
 
-    contenido = re.sub(r"<[^>]*>", "", contenido).strip()
+    print("[TECHNOVA] Tema seleccionado:", titulo)
+    print("[TECHNOVA] Generando artículo...")
 
-    if not contenido:
-        raise ValueError("El artículo generado está vacío.")
-
-    if not RUTA_PUBLICACIONES.exists():
-        publicaciones = []
-    else:
-        with RUTA_PUBLICACIONES.open("r", encoding="utf-8") as archivo:
-            publicaciones = json.load(archivo)
-
-    if not isinstance(publicaciones, list):
-        raise ValueError("publicaciones.json debe contener una lista.")
+    contenido = generar_articulo(cliente, titulo)
 
     ids = [
         p.get("id", 0)
         for p in publicaciones
-        if isinstance(p.get("id", 0), int)
+        if isinstance(p, dict)
+        and isinstance(p.get("id", 0), int)
     ]
 
     nuevo_id = max(ids, default=0) + 1
 
-    nueva_publicacion = {
+    nueva = {
         "id": nuevo_id,
+        "tema_id": tema_id,
         "fecha": date.today().isoformat(),
         "titulo": titulo,
         "contenido": contenido,
@@ -108,21 +145,21 @@ def generar_publicacion():
         "estado": "revision"
     }
 
-    publicaciones.insert(0, nueva_publicacion)
+    publicaciones.insert(0, nueva)
 
-    temporal = RUTA_PUBLICACIONES.with_suffix(".tmp")
+    temporal = RUTA.with_suffix(".tmp")
 
     with temporal.open("w", encoding="utf-8") as archivo:
         json.dump(publicaciones, archivo, ensure_ascii=False, indent=2)
         archivo.write("\n")
 
-    os.replace(temporal, RUTA_PUBLICACIONES)
+    os.replace(temporal, RUTA)
 
-    print("Publicación guardada correctamente.")
+    print("[TECHNOVA] Publicación guardada.")
     print("ID:", nuevo_id)
     print("Título:", titulo)
     print("Estado: revision")
-    print("Total de publicaciones:", len(publicaciones))
+    print("Total:", len(publicaciones))
 
 
 if __name__ == "__main__":
