@@ -1,5 +1,13 @@
 [
   {
+    "id": 9,
+    "fecha": "2026-11-08",
+    "titulo": "Cómo proteger tus datos personales en el día a día",
+    "contenido": "Proteger tu información digital es una responsabilidad diaria. No se trata de ser un experto en ciberseguridad, sino de adoptar hábitos sencillos que reduzcan riesgos significativamente.\n\nEmpieza por fortalecer tus contraseñas. Evita usar la misma clave para todos tus servicios. Lo ideal es crear combinaciones únicas y complejas para cada cuenta. Utilizar un gestor de contraseñas te ayuda a recordarlas sin esfuerzo y mejora tu seguridad general.\n\nActiva la verificación en dos pasos siempre que sea posible. Esta capa extra exige un código adicional al iniciar sesión, dificultando el acceso a terceros aunque roben tu contraseña. Revisa periódicamente qué aplicaciones tienen permisos sobre tus datos y revoca aquellos que ya no necesites.\n\nMantén tus dispositivos actualizados. Las actualizaciones de seguridad corrigen vulnerabilidades conocidas que los ciberdelincuentes suelen explotar. No las pospongas.\n\nDesconfía de los correos electrónicos o mensajes que piden datos urgentes o enlaces sospechosos. Antes de hacer clic, verifica la identidad del remitente. La precaución es tu mejor herramienta.\n\nFinalmente, piensa antes de compartir información personal en redes sociales. Lo que publicas hoy puede ser utilizado mañana para ingeniería social. Tu privacidad depende de tus decisiones cotidianas.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 8,
     "fecha": "2026-11-08",
     "titulo": "Cómo proteger tus datos personales en el día a día",
