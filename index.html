@@ -1,330 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StickerCraft Hub - Emprende desde Casa con IA</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --amazon-orange: #ff9900;
-            --amazon-hover: #e68a00;
-        }
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.7;
-            max-width: 700px;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0 20px 0;
-            border-bottom: 1px solid #334155;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            font-size: 32px;
-            margin: 0;
-            background: linear-gradient(to right, #ff9900, #ffc47d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-        header p {
-            color: var(--text-muted);
-            font-size: 15px;
-            margin-top: 8px;
-        }
-        .post {
-            background-color: var(--card-bg);
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            margin-bottom: 30px;
-            position: relative;
-            border: 1px solid #2e3e56;
-            transition: transform 0.2s;
-        }
-        .post:hover {
-            transform: translateY(-2px);
-        }
-        .tag-hoy {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ef4444;
-            color: white;
-            font-size: 11px;
-            font-weight: bold;
-            padding: 4px 10px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-        }
-        h2 {
-            font-size: 22px;
-            color: var(--text-main);
-            margin-top: 0;
-            margin-bottom: 15px;
-            padding-right: 90px;
-            font-weight: 700;
-        }
-        .contenido {
-            color: #cbd5e1;
-            font-size: 15px;
-        }
-        .btn-amazon {
-            display: inline-block;
-            background-color: var(--amazon-orange);
-            color: #0f172a !important;
-            font-weight: 700;
-            text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 8px;
-            margin-top: 15px;
-            transition: all 0.2s;
-            box-shadow: 0 4px 14px rgba(255, 153, 0, 0.4);
-            font-size: 15px;
-        }
-        .btn-amazon:hover {
-            background-color: var(--amazon-hover);
-            transform: scale(1.02);
-            box-shadow: 0 6px 20px rgba(255, 153, 0, 0.6);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TECHNOVA: descubre productos, accesorios y novedades tecnológicas.">
+<title>TECHNOVA | Tecnología para tu día a día</title>
+<style>
+:root {
+  --fondo:#080d18;
+  --panel:#101a2b;
+  --azul:#168cff;
+  --azul2:#55b7ff;
+  --texto:#f4f7ff;
+  --suave:#aab8cc;
+  --borde:#22334d;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:var(--fondo);
+  color:var(--texto);
+  font-family:Arial,Helvetica,sans-serif;
+}
+header {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#080d18ee;
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--borde);
+}
+.nav {
+  max-width:1150px;
+  margin:auto;
+  padding:17px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.logo {font-size:24px;font-weight:900;letter-spacing:1px}
+.logo span {color:var(--azul2)}
+nav {display:flex;gap:20px;flex-wrap:wrap}
+nav a {color:var(--suave);text-decoration:none;font-size:14px}
+nav a:hover {color:var(--azul2)}
+main {max-width:1150px;margin:auto;padding:25px 20px}
+.hero {
+  padding:65px 30px;
+  border:1px solid #174879;
+  border-radius:24px;
+  background:radial-gradient(ellipse at top right,#123c70 0%,#101a2b 48%,#0b1322 100%);
+}
+.etiqueta {
+  color:var(--azul2);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+h1 {font-size:clamp(36px,7vw,64px);margin:15px 0}
+.hero p {color:var(--suave);max-width:580px;line-height:1.7}
+.buscador {
+  margin-top:25px;
+  max-width:550px;
+  display:flex;
+  background:#080d18;
+  border:1px solid var(--borde);
+  border-radius:12px;
+  padding:5px;
+}
+.buscador input {
+  flex:1;min-width:0;background:transparent;border:0;
+  color:white;padding:13px;outline:none;font-size:15px;
+}
+.buscador button,.boton {
+  background:var(--azul);color:white;border:0;
+  padding:12px 18px;border-radius:9px;font-weight:bold;
+}
+.seccion {margin-top:55px}
+.seccion h2 {font-size:27px;margin-bottom:8px}
+.sub {color:var(--suave);line-height:1.6}
+.categorias {display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+.categoria {
+  border:1px solid var(--borde);background:var(--panel);
+  color:var(--suave);padding:10px 16px;border-radius:30px;
+  cursor:pointer;
+}
+.categoria.activa,.categoria:hover {
+  background:#123d70;border-color:var(--azul);color:white;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:17px;
+}
+.tarjeta {
+  background:var(--panel);border:1px solid var(--borde);
+  border-radius:17px;padding:20px;min-width:0;
+}
+.tarjeta:hover {border-color:var(--azul)}
+.icono {
+  height:120px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#102d50,#14223a);
+  border-radius:12px;font-size:48px;margin-bottom:16px;
+}
+.tarjeta h3 {margin:8px 0}
+.tarjeta p {color:var(--suave);font-size:14px;line-height:1.6}
+.estado {
+  display:inline-block;background:#253349;color:#c7dcf6;
+  padding:6px 10px;border-radius:20px;font-size:11px;
+}
+.aviso {
+  border:1px solid var(--borde);border-radius:12px;
+  padding:15px;color:var(--suave);line-height:1.6;
+}
+.novedad {border-left:3px solid var(--azul);padding-left:15px}
+.novedad p {white-space:pre-line}
+.vacio {color:var(--suave);padding:20px 0}
+footer {
+  margin-top:65px;border-top:1px solid var(--borde);
+  padding:30px 20px;color:var(--suave);font-size:13px;
+  line-height:1.7;text-align:center;
+}
+footer strong {color:white}
+@media(max-width:600px) {
+  .nav {align-items:flex-start;flex-direction:column}
+  nav {gap:14px}
+  .hero {padding:42px 20px}
+  .buscador button {padding:10px}
+  main {padding:18px 14px}
+}
+</style>
 </head>
 <body>
+<header>
+  <div class="nav">
+    <div class="logo">TECH<span>NOVA</span></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#novedades">Novedades</a>
+    </nav>
+  </div>
+</header>
 
-    <header>
-        <h1>✨ StickerCraft Hub</h1>
-        <p>Tu guía diaria de personalización, stickers y proyectos independientes.</p>
-    </header>
+<main>
+<section class="hero" id="inicio">
+  <div class="etiqueta">EXPLORA EL MUNDO TECNOLÓGICO</div>
+  <h1>La tecnología<br>que mueve el futuro.</h1>
+  <p>Descubre accesorios, novedades y productos tecnológicos para hacer más fácil tu día a día.</p>
+  <div class="buscador">
+    <input id="busqueda" type="search" placeholder="Buscar productos o novedades...">
+    <button id="buscar">Buscar</button>
+  </div>
+</section>
 
-    <main>
-        <!-- INICIO_POSTS -->
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Gana dinero con Cricut StickerPix: tu negocio de pegatinas</h2>
-            <div class="contenido">
-                ¿Sueñas con convertir tu creatividad en ingresos? La **Cricut StickerPix** es la clave. Esta máquina todo en uno redefine cómo creas productos digitales tangibles, eliminando las barreras técnicas de la producción tradicional.
+<section class="seccion" id="catalogo">
+  <h2>Explora el catálogo</h2>
+  <p class="sub">Conoce nuestras categorías y descubre nuevas opciones tecnológicas.</p>
+  <div class="categorias" id="categorias"></div>
+  <div class="grid" id="productos">
+    <p class="vacio">Cargando catálogo...</p>
+  </div>
+</section>
 
-Su diseño portátil y su capacidad integrada para **imprimir, laminar y cortar** permiten una eficiencia sin precedentes. No necesitas un estudio profesional ni equipos costosos; todo ocurre en la palma de tu mano.
+<section class="seccion" id="novedades">
+  <h2>Últimas novedades</h2>
+  <p class="sub">Consejos, información y contenido sobre tecnología.</p>
+  <div class="grid" id="publicaciones">
+    <p class="vacio">Cargando novedades...</p>
+  </div>
+</section>
 
-**¿Por qué es ideal para tu negocio casero?**
+<section class="seccion">
+  <h2>Promociones y videos</h2>
+  <div class="aviso">
+    Estamos preparando contenido visual y videos para presentar productos
+    y explicar sus características. Próximamente encontrarás novedades aquí.
+  </div>
+</section>
+</main>
 
-*   **Portabilidad extrema:** Crea desde tu cocina, el garaje o incluso en ferias locales.
-*   **Calidad profesional:** La laminación integrada asegura que tus pegatinas resistan el desgaste y luz solar.
-*   **Personalización total:** Diseña en tu computadora y produce lotes pequeños o grandes con rapidez.
+<footer>
+  <strong>TECHNOVA</strong> · Tecnología para tu día a día.<br>
+  Este sitio es actualmente un catálogo informativo de demostración.
+  No procesa pagos ni pedidos. Los productos de demostración no están
+  disponibles para compra. Los futuros enlaces comerciales o de afiliado
+  se identificarán claramente.
+</footer>
 
-Este flujo de trabajo simplificado reduce el tiempo de producción al mínimo, permitiéndote centrarte en el diseño y la venta. Es la herramienta perfecta para emprendedores que buscan escalar sus ventas de artesanías sin complicaciones logísticas.
+<script>
+const $ = id => document.getElementById(id);
+let productos = [];
+let publicaciones = [];
+let categoriaActual = "Todas";
 
-Empieza hoy mismo a fabricar pegatinas de alta demanda y transforma tu pasión en una fuente de ingresos sólida y rentable.
+function crearTarjetaProducto(p) {
+  const tarjeta = document.createElement("article");
+  tarjeta.className = "tarjeta";
 
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Gana dinero creando pegatinas con Cricut StickerPix</h2>
-            <div class="contenido">
-                ¿Te imaginas convertir tus ideas en ingresos reales sin salir de casa? La **Cricut StickerPix** es la herramienta definitiva para empezar a ganar dinero creando pegatinas personalizadas de forma profesional y accesible.
+  const icono = document.createElement("div");
+  icono.className = "icono";
+  icono.textContent = "📱";
 
-Esta máquina todo en uno simplifica drásticamente el proceso creativo. Olvídate de gestionar múltiples dispositivos o servicios externos. La StickerPix integra tres funciones esenciales en un solo flujo de trabajo:
+  const titulo = document.createElement("h3");
+  titulo.textContent = p.nombre || "Producto";
 
-*   **Impresión:** Colores vibrantes y nítidos.
-*   **Laminado:** Protección instantánea para durabilidad.
-*   **Corte:** Precisión milimétrica para cualquier diseño.
+  const descripcion = document.createElement("p");
+  descripcion.textContent = p.descripcion || "Información próximamente.";
 
-Su diseño portátil la hace ideal para proyectos caseros. No necesitas un estudio grande ni conocimientos técnicos avanzados. Solo necesitas tu creatividad. Puedes crear pedidos personalizados para Etsy, vender en ferias locales o ofrecer servicios a pequeñas empresas. Al tener control total sobre la producción, tus márgenes de beneficio aumentan significativamente.
+  const categoria = document.createElement("p");
+  categoria.textContent = p.categoria || "Tecnología";
 
-La tecnología de impresión, laminado y corte integrada elimina el estrés logístico. Cada pegatina sale lista para enviar o vender, garantizando una calidad constante que fideliza a tus clientes. Es la solución perfecta para emprendedores que buscan eficiencia y calidad sin complicaciones.
+  const estado = document.createElement("span");
+  estado.className = "estado";
+  estado.textContent = p.estado === "activo" ? "Disponible" : "Próximamente";
 
-Empieza hoy mismo a monetizar tu talento. La inversión se recupera rápidamente con tus primeras ventas. No dejes pasar la oportunidad de dominar el mercado de las pegatinas personalizadas con la herramienta más completa del mercado.
+  tarjeta.append(icono, titulo, categoria, descripcion, estado);
+  return tarjeta;
+}
 
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Convierte tu Cricut en una máquina de dinero</h2>
-            <div class="contenido">
-                ¿Cansado de vender productos genéricos? Es hora de transformar tu hobby en un negocio rentable. La clave no está en comprar más, sino en optimizar lo que ya tienes.
+function crearTarjetaPublicacion(p) {
+  const tarjeta = document.createElement("article");
+  tarjeta.className = "tarjeta novedad";
 
-La **Cricut StickerPix Print + Cut** es la herramienta definitiva para convertir tu Cricut en una máquina de dinero. A diferencia de las máquinas tradicionales, este dispositivo todo en uno integra la impresión, el laminado y el corte en un solo flujo de trabajo portátil.
+  const titulo = document.createElement("h3");
+  titulo.textContent = p.titulo || "Novedad tecnológica";
 
-Esta versatilidad elimina la necesidad de imprimir en casa y luego pasar a la máquina de corte, ahorrando tiempo y materiales. Al laminar en el propio dispositivo, tus productos ganan una protección profesional que justifica un precio premium.
+  const contenido = document.createElement("p");
+  contenido.textContent = p.contenido || "";
 
-Es la solución ideal para proyectos caseros porque:
+  tarjeta.append(titulo, contenido);
+  return tarjeta;
+}
 
-*   **Portabilidad total:** Crea productos donde quieras, desde tu salón hasta ferias locales.
-*   **Calidad de estudio:** Resultados nítidos y duraderos sin equipos industriales.
-*   **Versatilidad infinita:** Stickers, etiquetas, invitaciones y merchandising personalizado.
+function mostrarCategorias() {
+  const contenedor = $("categorias");
+  contenedor.replaceChildren();
 
-Al reducir los costes de producción y aumentar la percepción de valor, la StickerPix maximiza tus márgenes de beneficio. No necesitas un gran taller ni una inversión inicial abrumadora. Solo necesitas creatividad y esta máquina compacta para empezar a generar ingresos reales hoy mismo.
+  const nombres = ["Todas", ...new Set(productos.map(p => p.categoria).filter(Boolean))];
 
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Convierte tu Cricut en una máquina de hacer dinero</h2>
-            <div class="contenido">
-                ¿Cansado de las máquinas de corte que solo cortan? Es hora de elevar tu emprendimiento con la **Cricut StickerPix Print + Cut**. Esta innovadora máquina todo en uno redefine la creatividad portátil al integrar impresión, laminación y corte en un solo dispositivo compacto.
+  nombres.forEach(nombre => {
+    const boton = document.createElement("button");
+    boton.className = "categoria" + (categoriaActual === nombre ? " activa" : "");
+    boton.textContent = nombre;
+    boton.addEventListener("click", () => {
+      categoriaActual = nombre;
+      mostrarCategorias();
+      mostrarContenido();
+    });
+    contenedor.appendChild(boton);
+  });
+}
 
-Olvida los procesos complejos. La StickerPix permite crear productos de alta calidad directamente desde tu hogar, sin necesidad de equipos industriales costosos ni grandes espacios de trabajo. Su diseño portátil te ofrece la libertad de crear donde quieras: en tu escritorio, en una ferretería local o incluso en eventos de mercado.
+function mostrarContenido() {
+  const termino = $("busqueda").value.trim().toLowerCase();
 
-Ideal para proyectos caseros, esta herramienta es perfecta para:
-*   Crear stickers personalizados y pegatinas resistentes.
-*   Diseñar etiquetas para velas, jabones o cosméticos artesanales.
-*   Producir sellos y adornos para papelería creativa.
+  const listaProductos = productos.filter(p => {
+    const coincideCategoria = categoriaActual === "Todas" || p.categoria === categoriaActual;
+    const texto = `${p.nombre || ""} ${p.descripcion || ""} ${p.categoria || ""}`.toLowerCase();
+    return coincideCategoria && texto.includes(termino);
+  });
 
-Al combinar la precisión del corte con la durabilidad de la laminación, obtienes productos profesionales que los clientes valoran. Ya no necesitas enviar a imprenta; la producción es inmediata, reduciendo costos y tiempos de entrega. Convierte tu hobby en una fuente de ingresos real y sostenible.
+  const zonaProductos = $("productos");
+  zonaProductos.replaceChildren();
 
-Empieza hoy mismo a fabricar productos únicos que destaquen en el mercado. La tecnología que necesitas para monetizar tu creatividad está a un clic de distancia.
+  if (!listaProductos.length) {
+    const mensaje = document.createElement("p");
+    mensaje.className = "vacio";
+    mensaje.textContent = "No encontramos productos con esa búsqueda.";
+    zonaProductos.appendChild(mensaje);
+  } else {
+    listaProductos.forEach(p => zonaProductos.appendChild(crearTarjetaProducto(p)));
+  }
 
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Gana dinero creando pegatinas con Cricut StickerPix</h2>
-            <div class="contenido">
-                ¿Te imaginas transformando tus ideas en ingresos reales sin salir de casa? Con la **Cricut StickerPix**, crear pegatinas profesionales es más accesible que nunca. Esta máquina todo en uno redefine el emprendimiento casero al integrar tres funciones esenciales en un solo dispositivo portátil.
+  const listaPublicaciones = publicaciones.filter(p => {
+    const texto = `${p.titulo || ""} ${p.contenido || ""}`.toLowerCase();
+    return p.estado === "publicada" && texto.includes(termino);
+  });
 
-No necesitas equipos voluminosos ni conocimientos técnicos complejos. La StickerPix te permite:
+  const zonaPublicaciones = $("publicaciones");
+  zonaPublicaciones.replaceChildren();
 
-*   **Imprimir** diseños de alta calidad directamente desde tu dispositivo.
-*   **Laminar** para garantizar durabilidad y resistencia.
-*   **Cortar** con precisión milimétrica, lista para venta.
+  if (!listaPublicaciones.length) {
+    const mensaje = document.createElement("p");
+    mensaje.className = "vacio";
+    mensaje.textContent = "Próximamente publicaremos novedades revisadas.";
+    zonaPublicaciones.appendChild(mensaje);
+  } else {
+    listaPublicaciones.forEach(p => zonaPublicaciones.appendChild(crearTarjetaPublicacion(p)));
+  }
+}
 
-Su diseño compacto es perfecto para espacios pequeños, ideal para quienes buscan un negocio flexible desde el hogar. Al eliminar la necesidad de enviar archivos a imprentas externas, reduces costos y tiempos de espera drásticamente.
+async function iniciar() {
+  try {
+    const [respuestaProductos, respuestaPublicaciones] = await Promise.all([
+      fetch("./productos.json"),
+      fetch("./publicaciones.json")
+    ]);
 
-Empieza hoy mismo a monetizar tu creatividad. Ya sea para vender en ferias locales, mercados en línea o para personalizar regalos, esta herramienta te da el control total sobre cada detalle. Es la inversión perfecta para quienes desean un flujo de trabajo eficiente y rentable.
+    if (!respuestaProductos.ok || !respuestaPublicaciones.ok) {
+      throw new Error("No se pudieron cargar los archivos JSON.");
+    }
 
-No dejes pasar la oportunidad de lanzar tu propia línea de productos personalizados con la tecnología que está revolucionando el mundo de las manualidades.
+    productos = await respuestaProductos.json();
+    publicaciones = await respuestaPublicaciones.json();
 
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Gana dinero creando pegatinas con Cricut StickerPix</h2>
-            <div class="contenido">
-                ¿Te imaginas convertir tu creatividad en ingresos reales sin salir de casa? Con la **Cricut StickerPix**, es más fácil que nunca.
+    mostrarCategorias();
+    mostrarContenido();
+  } catch (error) {
+    $("productos").textContent = "No se pudo cargar el catálogo. Intenta nuevamente más tarde.";
+    $("publicaciones").textContent = "No se pudieron cargar las novedades.";
+    console.error(error);
+  }
+}
 
-Esta innovadora máquina todo en uno redefine la producción de pegatinas. Olvídate de los procesos complejos o del gasto en equipos industriales. StickerPix integra tres funciones esenciales en un solo dispositivo compacto:
-
-*   **Impresión de alta calidad:** Diseños nítidos y vibrantes.
-*   **Laminado automático:** Protección profesional para mayor durabilidad.
-*   **Corte preciso:** Acabados perfectos, listos para pegar.
-
-Su diseño portátil la convierte en la compañera ideal para proyectos caseros. Ya sea que quieras vender en ferias locales, crear contenido para redes sociales o personalizar regalos, puedes producir lotes pequeños o grandes desde tu mesa de trabajo.
-
-Emprender con pegatinas requiere poca inversión inicial y ofrece una rentabilidad atractiva. La StickerPix elimina las barreras técnicas, permitiéndote centrarte en lo que mejor sabes hacer: diseñar.
-
-No dejes pasar la oportunidad de monetizar tu arte. Convierte tus ideas en productos tangibles hoy mismo.
-
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <article class="post">
-            <div class="tag-hoy">NUEVO HOY</div>
-            <h2>Gana dinero desde casa con pegatinas Cricut</h2>
-            <div class="contenido">
-                ¿Cansado de las limitaciones del trabajo tradicional? La era de generar ingresos desde tu propio salón ha llegado con una herramienta revolucionaria: la **Cricut StickerPix**.
-
-Esta máquina todo en uno redefine la creatividad doméstica al integrar tres funciones esenciales en un solo dispositivo portátil: **imprime, lamina y corta**. No necesitas una imprenta industrial ni un espacio de trabajo enorme. Con StickerPix, puedes crear pegatinas de alta calidad, resistentes al agua y listas para vender o regalar, directamente en tu mesa de cocina.
-
-Es la solución perfecta para quienes buscan un negocio escalable y flexible. Su diseño compacto la hace ideal para proyectos caseros, permitiéndote producir en lotes pequeños o grandes sin complicaciones.
-
-**Ventajas clave:**
-*   **Portabilidad total:** Llévala a donde quieras.
-*   **Proceso simplificado:** De la idea al producto final en minutos.
-*   **Calidad profesional:** Acabado laminado que protege tus diseños.
-*   **Baja inversión inicial:** Empieza tu emprendimiento hoy mismo.
-
-No dejes pasar la oportunidad de monetizar tu talento creativo con una tecnología que elimina las barreras de entrada. Tu próximo proyecto rentable está a un clic de distancia.
-
-<br><br><div style='text-align:center;'><a href='https://amzn.to/4Bvi7Uj' class='btn-amazon'>🛒 Ver Oferta Especial de la Cricut StickerPix</a></div>
-            </div>
-        </article>
-    
-        <div class="post">
-            <h2>🔥 Recomendación del Día: Cricut Maker</h2>
-            ¿Cansado de productos genéricos? La **Cricut Maker** no es solo una máquina de cortar; es tu socio estratégico para transformar ideas en ingresos reales. Imagina crear camisetas personalizadas, etiquetas de lujo para tus productos o decoraciones únicas para el hogar en minutos, con una precisión que las herramientas manuales no pueden igualar.
-
-Su versatilidad es abrumadora: corta, perfora, graba y hasta escribe en más de 300 materiales, desde vinilo y papel hasta cuero y madera. Para el emprendedor, esto significa reducir costos de inventario y ofrecer personalización ilimitada, diferenciándote en un mercado saturado. Para el uso diario, es la solución perfecta para organizar la casa con etiquetas elegantes o crear regalos memorables que emocionan a cualquier persona.
-
-Deja de limitar tu creatividad. Con la Cricut Maker, el límite es tu imaginación, no tus herramientas. Empieza a monetizar tu talento o simplifica tu vida hoy mismo. No pierdas la oportunidad de llevar tu proyecto al siguiente nivel con tecnología de punta que ahorra tiempo y eleva la calidad de tus resultados. Tu éxito está a un clic de distancia.
-
-<br><br><a href='https://amzn.to' style='color:white; background-color:#FF9900; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>🛒 Ver en Amazon</a>
-        </div>
-    
-        <div class="post">
-            <h2>🔥 Recomendación del Día: Cortadora láser CNC</h2>
-            ¿Sueñas con convertir tus ideas en realidad tangible sin depender de fábricas costosas? La **Cortadora láser CNC** es la llave maestra para desbloquear un nivel superior de emprendimiento. No es solo una máquina; es tu socio de producción personal.
-
-Imagina crear prototipos complejos, joyería personalizada o mobiliario de diseño con una precisión milimétrica que las herramientas tradicionales simplemente no logran. Al automatizar el corte y grabado, reduces drásticamente el tiempo de fabricación, permitiéndote atender más pedidos y escalar tu negocio con agilidad.
-
-Los beneficios son inmediatos:
-1. **Precisión inigualable**: Detalles nítidos que elevan la percepción de calidad de tu marca.
-2. **Versatilidad**: Trabaja con madera, acrílico, cuero y más, abriendo infinitas líneas de producto.
-3. **Rentabilidad**: Elimina desperdicios y costos de mano de obra intensiva, maximizando tus márgenes de ganancia.
-
-Deja de limitarte a lo básico. Con esta herramienta, pasas de ser un artesano limitado a un fabricante ágil y profesional. Es la inversión inteligente que transforma un hobby en un negocio rentable y sostenible. No esperes a que otros dominen el mercado de la personalización; toma el control hoy mismo y haz que tu creatividad trabaje para ti.
-
-<br><br><a href='https://amzn.to' style='color:white; background-color:#FF9900; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>🛒 Ver en Amazon</a>
-        </div>
-    
-        <div class="post">
-            <h2>🔥 Recomendación del Día: Cricut Maker 3</h2>
-            ¿Cansado de limitarte a lo genérico? Con la **Cricut Maker 3**, tu creatividad se convierte en ingresos reales o en un hogar lleno de personalidad. Esta máquina no solo corta; *crea*. Gracias a su tecnología de corte adaptativo, puede trabajar con más de 300 materiales, desde cuero y madera hasta metales delgados, sin necesidad de cambiar de herramienta.
-
-Para emprendedores, es una inversión que se paga sola: personaliza camisetas, etiquetas, tarjetas de negocios y decoraciones únicas que tus clientes no encontrarán en ninguna tienda. La precisión de sus 10 herramientas intercambiables garantiza acabados profesionales que elevan la percepción de valor de tu marca.
-
-Para el uso diario, transforma tu hogar con arte a medida, invitaciones elegantes para eventos y accesorios personalizados que reflejan tu estilo. La integración con la app Cricut Design Space es intuitiva, permitiendo diseñar en minutos lo que antes requería horas de trabajo manual.
-
-No dejes que la idea de tus sueños se quede dormida. La Cricut Maker 3 es la llave para desbloquear tu potencial creativo, ya sea para generar un flujo de efectivo adicional o simplemente para disfrutar de la satisfacción de crear algo único con tus manos. Empieza hoy a convertir tus pasiones en realidad tangible.
-
-<br><br><a href='https://amzn.to' style='color:white; background-color:#FF9900; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>🛒 Ver en Amazon</a>
-        </div>
-    
-        <div class="post">
-            <h2>🔥 Recomendación del Día: Cricut Maker</h2>
-            ¿Cansado de las limitaciones de la impresión tradicional? El **Cricut Maker** no es solo una máquina; es tu socio creativo definitivo. Esta herramienta versátil te permite cortar, grabar y escribir en más de 300 materiales, desde vinilos y cartón hasta madera, cuero y incluso metal fino. Para emprendedores, es una mina de oro: produce productos personalizados de alta calidad, como tarjetas de visita elegantes, etiquetas de productos, decoración de interiores y regalos únicos, todo con un acabado profesional que justifica precios premium.
-
-En el hogar, transforma tu espacio y tus rutinas. Olvídate de buscar artículos genéricos; crea marcos de fotos a medida, organizadores de cocina o señalética personalizada para tu nicho. La precisión milimétrica y la facilidad de uso, gracias a su software intuitivo, eliminan las barreras de entrada a la fabricación. No necesitas ser un artista experto; solo necesitas ideas.
-
-Imagina el impacto de ofrecer productos que nadie más tiene, o la satisfacción de ver tu creatividad materializada en objetos tangibles y duraderos. El Cricut Maker maximiza tu tiempo y reduce costos de producción a largo plazo, haciéndote más competitivo y creativo. No dejes pasar la oportunidad de dominar el arte de la personalización. Este gadget es la inversión que cambiará la forma en que creas y vendes.
-
-<br><br><a href='https://amzn.to' style='color:white; background-color:#FF9900; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>🛒 Ver en Amazon</a>
-        </div>
-    
-        <div class="post">
-            <h2>🔥 Recomendación del Día: Cricut Maker</h2>
-            ¿Cansado de limitarte a lo genérico? Convierte tu creatividad en ingresos reales con la **Cricut Maker**. No es solo una máquina de corte; es tu socio de negocios ideal para emprender sin grandes inversiones. Imagina crear tarjetas personalizadas, ropa de marca propia, decoración para el hogar o detalles de boda únicos en minutos. Cricut Maker te permite trabajar con más de 300 materiales, desde vinilos y telas hasta madera fina y metal, ofreciendo una versatilidad que ninguna otra herramienta en su clase iguala.
-
-Los beneficios son inmediatos: precisión milimétrica, ahorro de tiempo y la libertad de diseñar sin límites. Ya no necesitas conocimientos técnicos avanzados; con su software intuitivo, cualquier persona puede pasar de la idea al producto terminado en horas. Ideal para quienes buscan diversificar sus ingresos con productos de alto valor percibido o simplemente quieren llevar su decoración personal al siguiente nivel. Es la inversión perfecta para quienes valoran la calidad artesanal con la eficiencia de la tecnología moderna. Deja de soñar con tu propio negocio y empieza a crear hoy mismo. Tu próxima gran oportunidad está a un clic de distancia.
-
-<br><br><a href='https://amzn.to' style='color:white; background-color:#FF9900; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>🛒 Ver en Amazon</a>
-        </div>
-    <!-- FIN_POSTS -->
-    </main>
-
-    <footer style="text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 12px; border-top: 1px solid #334155; padding-top: 20px;">
-        Generado de forma autónoma por IA • Enlaces de afiliación de Amazon
-    </footer>
-
+$("buscar").addEventListener("click", mostrarContenido);
+$("busqueda").addEventListener("input", mostrarContenido);
+iniciar();
+</script>
 </body>
 </html>

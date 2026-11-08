@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Accesorios para celular",
+    "categoria": "Celulares",
+    "descripcion": "Accesorios tecnológicos para el uso diario.",
+    "precio": null,
+    "imagen": "",
+    "enlace": "",
+    "estado": "demostracion"
+  },
+  {
+    "id": 2,
+    "nombre": "Audífonos inalámbricos",
+    "categoria": "Audio",
+    "descripcion": "Explora opciones de audio y conectividad.",
+    "precio": null,
+    "imagen": "",
+    "enlace": "",
+    "estado": "demostracion"
+  },
+  {
+    "id": 3,
+    "nombre": "Luces LED inteligentes",
+    "categoria": "Iluminación",
+    "descripcion": "Ideas de iluminación para espacios modernos.",
+    "precio": null,
+    "imagen": "",
+    "enlace": "",
+    "estado": "demostracion"
+  }
+]
