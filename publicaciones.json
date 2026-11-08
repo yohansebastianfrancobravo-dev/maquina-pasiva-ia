@@ -1,5 +1,14 @@
 [
   {
+    "id": 11,
+    "tema_id": "permisos",
+    "fecha": "2026-11-07",
+    "titulo": "Cómo revisar los permisos de las aplicaciones",
+    "contenido": "Título: Cómo revisar los permisos de las aplicaciones\n\nCada aplicación en tu teléfono solicita acceso a funciones específicas, como la cámara, el micrófono o tu ubicación. Revisar estos permisos es fundamental para proteger tu privacidad y controlar qué información compartes. No todas las solicitudes son necesarias; por ejemplo, una app de notas no debería pedir acceso a tu ubicación.\n\nPara mantener tu dispositivo seguro, revisa periódicamente la configuración de privacidad de tu teléfono. Busca la sección de aplicaciones y examina los permisos concedidos a cada programa. Si detectas accesos que no reconoces o que no son lógicos para la función de la app, revócalos de inmediato. Además, al instalar nuevas aplicaciones, lee con atención las solicitudes de permisos antes de aceptarlas. Desconfía de apps que piden demasiados accesos innecesarios. Tomarte unos minutos para auditar tus permisos te ayuda a mantener el control sobre tus datos personales y a evitar usos no deseados de tus funciones del dispositivo.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 10,
     "tema_id": "errores_ia",
     "fecha": "2026-11-08",
