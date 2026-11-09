@@ -1,5 +1,14 @@
 [
   {
+    "id": 13,
+    "tema_id": "copias",
+    "fecha": "2026-11-09",
+    "titulo": "Por qué es importante hacer copias de seguridad",
+    "contenido": "Título: Por qué es importante hacer copias de seguridad\n\nPerder archivos importantes puede ser una experiencia frustrante y costosa. Las copias de seguridad son una versión de tus datos guardada en un lugar diferente al original, como un disco externo o la nube. Su función principal es permitirte recuperar la información si tu equipo falla, se daña por un virus o sufres un robo.\n\nPara proteger tus recuerdos y documentos de trabajo, sigue estos consejos prácticos. Primero, automatiza el proceso para no depender de tu memoria. Segundo, utiliza la regla 3-2-1: mantén tres copias de tus datos, en dos tipos de medios distintos y una de ellas fuera de tu casa. Tercero, verifica periódicamente que las copias sean completas y funcionales. No esperes a que ocurra un problema para actuar. La prevención es la mejor herramienta para mantener tu tranquilidad digital y asegurar que tu información valiosa no se pierda nunca.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 12,
     "tema_id": "phishing",
     "fecha": "2026-11-08",
