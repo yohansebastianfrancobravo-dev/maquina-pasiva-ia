@@ -1,5 +1,14 @@
 [
   {
+    "id": 14,
+    "tema_id": "actualizaciones",
+    "fecha": "2026-11-10",
+    "titulo": "Por qué debes mantener actualizado tu celular",
+    "contenido": "Mantener tu celular actualizado es una práctica esencial para la seguridad y el buen funcionamiento de tu dispositivo. Las actualizaciones no solo corrigen errores de software, sino que también instalan parches de seguridad que protegen tu información personal frente a amenazas externas. Ignorar estas notificaciones deja tu equipo vulnerable a posibles ataques o fallos inesperados.\n\nPara mantener tu teléfono en óptimas condiciones, te recomendamos revisar periódicamente la sección de ajustes de software. Asegúrate de tener suficiente espacio de almacenamiento libre antes de iniciar la descarga, ya que los archivos de actualización pueden ocupar varios gigabytes. Además, es aconsejable conectar el dispositivo a una red Wi-Fi estable para evitar consumir tu plan de datos móviles. Realiza este proceso cuando tengas tiempo suficiente y la batería cargada, para evitar interrupciones que puedan dañar el sistema.\n\nAdoptar el hábito de actualizar tu equipo de forma regular es una medida sencilla pero fundamental. No solo prolonga la vida útil de tu teléfono, sino que también garantiza una experiencia de uso más fluida y segura. Cuida tus datos y tu dispositivo dedicando unos minutos cada mes a esta tarea importante.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 13,
     "tema_id": "copias",
     "fecha": "2026-11-09",
