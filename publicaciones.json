@@ -1,5 +1,14 @@
 [
   {
+    "id": 15,
+    "tema_id": "bateria",
+    "fecha": "2026-11-11",
+    "titulo": "Hábitos para cuidar la batería del celular",
+    "contenido": "Hábitos para cuidar la batería del celular\n\nLa batería es el componente que permite que tu teléfono funcione durante todo el día. Con el tiempo, su capacidad disminuye de forma natural, pero algunos hábitos pueden ayudar a prolongar su vida útil y mantener un buen rendimiento.\n\nPara empezar, evita dejar el dispositivo cargando toda la noche. Lo ideal es desconectarlo cuando alcance un nivel alto, sin esperar a que llegue al cien por ciento. También es recomendable evitar que la batería se agote por completo con frecuencia, ya que las descargas profundas pueden acelerar el desgaste.\n\nMantener el teléfono a una temperatura moderada es fundamental. El calor excesivo, como el que se genera al usarlo bajo el sol directo o mientras carga, daña las celdas internas. Por último, actualiza el software de tu equipo, ya que las mejoras suelen incluir optimizaciones que gestionan mejor el consumo de energía. Adoptar estas prácticas simples contribuye a que tu dispositivo conserve su autonomía por más tiempo.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 14,
     "tema_id": "actualizaciones",
     "fecha": "2026-11-10",
