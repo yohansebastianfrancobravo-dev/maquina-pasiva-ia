@@ -1,5 +1,14 @@
 [
   {
+    "id": 16,
+    "tema_id": "archivos",
+    "fecha": "2026-11-12",
+    "titulo": "Cómo organizar archivos digitales",
+    "contenido": "Cómo organizar archivos digitales\n\nMantener tus archivos digitales ordenados facilita encontrar información importante y ahorra tiempo valioso. Un sistema claro evita el desorden y reduce la frustración al buscar documentos.\n\nPara empezar, crea carpetas principales basadas en categorías lógicas, como trabajo, personal, finanzas o proyectos. Dentro de cada una, usa subcarpetas para dividir temas específicos. Evita nombres confusos o demasiado largos; utiliza fechas y descripciones breves para identificar cada archivo rápidamente.\n\nEs recomendable establecer una convención de nombres consistente, por ejemplo, año-mes-día seguido del título del documento. Así, \"2023-10-15-informe-anual\" es más claro que \"documento final 2\".\n\nRevisa y actualiza tu estructura periódicamente. Archiva o elimina archivos obsoletos para mantener el sistema ágil. Si trabajas con equipos, asegúrate de que todos sigan las mismas reglas para evitar duplicados y confusiones. Una organización simple y mantenida es la clave para una gestión digital eficiente y tranquila.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 15,
     "tema_id": "bateria",
     "fecha": "2026-11-11",
