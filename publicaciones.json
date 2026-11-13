@@ -1,5 +1,14 @@
 [
   {
+    "id": 17,
+    "tema_id": "nube",
+    "fecha": "2026-11-13",
+    "titulo": "Qué es el almacenamiento en la nube",
+    "contenido": "Qué es el almacenamiento en la nube\n\nEl almacenamiento en la nube consiste en guardar archivos digitales en servidores remotos accesibles a través de internet. En lugar de ocupar espacio en el disco duro de tu computadora o teléfono, los datos se alojan en infraestructuras gestionadas por proveedores especializados. Esto permite acceder a tus documentos, fotos o videos desde cualquier dispositivo conectado, facilitando el trabajo colaborativo y la sincronización automática.\n\nPara utilizar este servicio de manera eficaz, sigue estos consejos prácticos. Primero, verifica que tu conexión a internet sea estable para evitar interrupciones durante las subidas o descargas. Segundo, organiza tus archivos en carpetas lógicas para encontrarlos rápidamente. Tercero, revisa periódicamente qué archivos ocupan más espacio y elimina los que ya no necesites. Finalmente, aunque la nube ofrece copias de seguridad, es recomendable mantener una copia local de información crítica o sensible. Comprender estos principios básicos te ayudará a gestionar tus datos digitales con mayor seguridad y orden.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 16,
     "tema_id": "archivos",
     "fecha": "2026-11-12",
