@@ -1,5 +1,14 @@
 [
   {
+    "id": 18,
+    "tema_id": "accesibilidad",
+    "fecha": "2026-11-14",
+    "titulo": "Funciones de accesibilidad en los teléfonos",
+    "contenido": "Funciones de accesibilidad en los teléfonos\n\nLos teléfonos modernos incluyen herramientas de accesibilidad diseñadas para facilitar el uso a personas con diferentes necesidades físicas, visuales o auditivas. Estas funciones permiten adaptar la interfaz del dispositivo para que sea más cómoda y eficiente.\n\nEntre las opciones más comunes se encuentran el aumento del tamaño del texto, los contrastes de color altos y los lectores de pantalla, que leen en voz alta lo que aparece en el dispositivo. También existen controles por voz, que permiten realizar acciones sin tocar la pantalla, y ajustes de vibración para notificaciones.\n\nPara aprovechar estas herramientas, es recomendable explorar el menú de ajustes de accesibilidad de tu teléfono. Prueba diferentes configuraciones para encontrar la que mejor se adapte a tus preferencias. Si tienes dificultades específicas, consulta la guía de usuario de tu marca o busca tutoriales oficiales. Estas funciones no solo ayudan a quienes tienen discapacidades, sino que también mejoran la experiencia general de uso para todos los usuarios, haciendo la tecnología más inclusiva y fácil de manejar en el día a día.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 17,
     "tema_id": "nube",
     "fecha": "2026-11-13",
