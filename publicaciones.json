@@ -1,5 +1,14 @@
 [
   {
+    "id": 19,
+    "tema_id": "estafas",
+    "fecha": "2026-11-15",
+    "titulo": "Señales para identificar posibles estafas digitales",
+    "contenido": "Señales para identificar posibles estafas digitales\n\nLas estafas digitales buscan engañarte para obtener dinero o datos personales. Reconocer sus señales es la primera línea de defensa. Desconfía de mensajes urgentes que te piden actuar de inmediato, ya que los estafadores suelen crear pánico para que no pienses con claridad.\n\nOtra señal común son las ofertas demasiado buenas para ser ciertas, como premios inesperados o descuentos extremos. Verifica siempre la identidad del remitente; los correos con errores ortográficos o enlaces sospechosos son una bandera roja. Nunca compartas contraseñas, códigos de verificación o datos bancarios por mensaje de texto o correo electrónico, incluso si la persona se hace pasar por una institución conocida.\n\nPara protegerte, activa la autenticación en dos pasos en tus cuentas importantes. Antes de hacer clic en cualquier enlace, pasa el cursor sobre él para ver la dirección real. Si algo parece extraño, detente y verifica la información a través de canales oficiales. Mantener la calma y la duda saludable es tu mejor herramienta contra el fraude en línea.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 18,
     "tema_id": "accesibilidad",
     "fecha": "2026-11-14",
