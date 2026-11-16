@@ -1,5 +1,14 @@
 [
   {
+    "id": 20,
+    "tema_id": "bluetooth",
+    "fecha": "2026-11-16",
+    "titulo": "Cómo funciona la conexión Bluetooth",
+    "contenido": "La conexión Bluetooth permite que dos dispositivos se comuniquen sin cables. Funciona mediante ondas de radio de baja potencia que viajan por el aire. Para que funcione, ambos equipos deben estar encendidos y en modo de descubrimiento.\n\nEl proceso es sencillo. Primero, activas la función en tu teléfono o auriculares. Luego, buscas el otro dispositivo en la lista de opciones disponibles. Al seleccionarlo, los equipos intercambian información para establecer un enlace seguro. Una vez conectados, pueden compartir audio, archivos o datos de forma automática.\n\nPara mejorar tu experiencia, mantén los dispositivos cerca, idealmente a menos de diez metros. Evita obstáculos gruesos o mucha interferencia de otros aparatos electrónicos. Si la señal se corta, reinicia la conexión o apaga y enciende el Bluetooth. Mantener el software actualizado también ayuda a resolver problemas comunes. Esta tecnología facilita la vida diaria al eliminar la necesidad de cables en tareas cotidianas como escuchar música o usar el ratón inalámbrico.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 19,
     "tema_id": "estafas",
     "fecha": "2026-11-15",
