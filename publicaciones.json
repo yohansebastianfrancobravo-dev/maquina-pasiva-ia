@@ -1,5 +1,14 @@
 [
   {
+    "id": 21,
+    "tema_id": "wifi",
+    "fecha": "2026-11-17",
+    "titulo": "Consejos para utilizar redes Wi-Fi públicas",
+    "contenido": "Las redes Wi-Fi públicas, como las de aeropuertos o cafeterías, son prácticas pero presentan riesgos de seguridad. Cualquier persona conectada a la misma red puede intentar interceptar tus datos si no tomas precauciones.\n\nPara proteger tu información, evita realizar transacciones bancarias o comprar en línea mientras estés conectado a una red abierta. Si es imprescindible, asegúrate de que el sitio web utilice el protocolo HTTPS, indicado por un candado en la barra del navegador.\n\nOtra medida fundamental es desactivar la conexión automática a redes Wi-Fi desconocidas. De esta forma, tu dispositivo no se unirá a una red insegura sin tu permiso. Además, mantén tus aplicaciones y sistemas operativos actualizados para corregir posibles vulnerabilidades.\n\nFinalmente, considera el uso de una red privada virtual (VPN), que cifra tu tráfico de internet y añade una capa extra de privacidad. Al seguir estos consejos simples, podrás disfrutar de la conectividad en espacios públicos con mayor tranquilidad y seguridad.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 20,
     "tema_id": "bluetooth",
     "fecha": "2026-11-16",
