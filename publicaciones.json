@@ -1,5 +1,14 @@
 [
   {
+    "id": 22,
+    "tema_id": "notificaciones",
+    "fecha": "2026-11-18",
+    "titulo": "Cómo administrar las notificaciones del celular",
+    "contenido": "Cómo administrar las notificaciones del celular\n\nLas notificaciones constantes pueden interrumpir tu concentración y aumentar el estrés. Administrarlas bien te ayuda a recuperar el control de tu tiempo y tu atención. El primer paso es revisar qué aplicaciones te envían avisos y decidir cuáles son realmente importantes. Desactiva las alertas de redes sociales, juegos o noticias que no necesitas ver al instante.\n\nPara hacerlo práctico, utiliza el modo de no molestar durante reuniones o momentos de estudio. También puedes agrupar las notificaciones menos urgentes para que aparezcan juntas en lugar de una a una. Esto reduce la tentación de revisar el teléfono cada pocos minutos.\n\nRecuerda que no todo mensaje requiere una respuesta inmediata. Establece horarios específicos para revisar correos o mensajes. Al ser selectivo con lo que te llega, proteges tu bienestar digital y mejoras tu productividad diaria sin depender de herramientas complejas.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 21,
     "tema_id": "wifi",
     "fecha": "2026-11-17",
