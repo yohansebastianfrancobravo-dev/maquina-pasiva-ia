@@ -1,5 +1,14 @@
 [
   {
+    "id": 23,
+    "tema_id": "inteligencia_artificial",
+    "fecha": "2026-11-19",
+    "titulo": "Cómo funciona la inteligencia artificial",
+    "contenido": "La inteligencia artificial no es magia, sino un conjunto de algoritmos que permiten a las computadoras aprender de los datos. En lugar de seguir instrucciones fijas, los sistemas de IA analizan grandes volúmenes de información para identificar patrones y tomar decisiones. Por ejemplo, un chatbot aprende el lenguaje humano procesando millones de conversaciones previas para generar respuestas coherentes.\n\nPara entenderla mejor, piensa en ella como una herramienta que amplifica nuestra capacidad de análisis, no como un reemplazo del criterio humano. Es importante recordar que la IA puede cometer errores o reflejar sesgos presentes en sus datos de entrenamiento, por lo que siempre debemos verificar la información que genera.\n\nComo consejo práctico, utiliza la IA para tareas repetitivas o para generar ideas iniciales, pero mantén siempre el control final. Revisa cuidadosamente los resultados y usa tu juicio crítico. La tecnología es más útil cuando la combinamos con nuestra experiencia y conocimiento, asegurándonos de que sirva a nuestros objetivos reales sin depender ciegamente de sus salidas automáticas.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 22,
     "tema_id": "notificaciones",
     "fecha": "2026-11-18",
