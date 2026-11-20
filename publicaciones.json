@@ -1,5 +1,14 @@
 [
   {
+    "id": 24,
+    "tema_id": "huella_digital",
+    "fecha": "2026-11-20",
+    "titulo": "Qué es la huella digital en Internet",
+    "contenido": "La huella digital es el rastro de información que dejamos al navegar por Internet. Incluye datos personales, fotos, comentarios y preferencias de compra. Esta información puede ser pública o privada, pero siempre existe.\n\nPara protegerla, revisa la configuración de privacidad en tus redes sociales. Evita compartir datos sensibles como tu dirección o número de teléfono con desconocidos. Usa contraseñas únicas y activar la verificación en dos pasos. Antes de publicar algo, pregúntate si estarías cómodo si todo el mundo lo viera. Recuerda que lo que subes a la red puede permanecer allí indefinidamente. Mantener una buena higiene digital no solo protege tu identidad, sino que también ayuda a evitar el robo de datos. Ser consciente de lo que compartimos es el primer paso para navegar con seguridad y responsabilidad en el mundo digital actual.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 23,
     "tema_id": "inteligencia_artificial",
     "fecha": "2026-11-19",
