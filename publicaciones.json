@@ -1,5 +1,14 @@
 [
   {
+    "id": 25,
+    "tema_id": "almacenamiento",
+    "fecha": "2026-11-21",
+    "titulo": "Cómo organizar el almacenamiento del teléfono",
+    "contenido": "**Cómo organizar el almacenamiento del teléfono**\n\nMantener el espacio de almacenamiento ordenado es esencial para que tu dispositivo funcione con fluidez y sin errores. Con el tiempo, las aplicaciones, fotos y archivos acumulados pueden saturar la memoria, lo que ralentiza el sistema y limita nuevas descargas.\n\nPara empezar, revisa qué ocupa más espacio. La mayoría de los teléfonos permiten ver un desglose por categorías. Identifica aplicaciones que ya no uses y desinstálalas. En cuanto a las imágenes, considera moverlas a la nube o a una computadora para liberar espacio local, aunque esto requiere conexión a internet.\n\nTambién es útil borrar la caché de las aplicaciones, que son datos temporales que se acumulan y no son necesarios para el funcionamiento básico. Evita guardar archivos duplicados o videos de baja calidad que ya no te interesen.\n\nRealizar esta limpieza periódicamente, por ejemplo, una vez al mes, previene problemas futuros. No necesitas herramientas externas complejas; las opciones de configuración del propio teléfono son suficientes para mantener tu dispositivo ágil y listo para el uso diario.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 24,
     "tema_id": "huella_digital",
     "fecha": "2026-11-20",
