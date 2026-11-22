@@ -1,5 +1,14 @@
 [
   {
+    "id": 26,
+    "tema_id": "codigos_qr",
+    "fecha": "2026-11-22",
+    "titulo": "Precauciones al utilizar códigos QR",
+    "contenido": "Título: Precauciones al utilizar códigos QR\n\nLos códigos QR son herramientas prácticas que permiten acceder rápidamente a información, sitios web o aplicaciones mediante la cámara de un teléfono. Sin embargo, su uso requiere cierta precaución para proteger tu privacidad y seguridad digital.\n\nAntes de escanear cualquier código, observa su origen. Evita usarlos en lugares públicos poco confiables o en pegatinas que cubren otros códigos, ya que podrían haber sido alterados por personas malintencionadas. Siempre verifica la dirección web que aparece en tu navegador después de escanear. Si el enlace parece sospechoso, no lo abras.\n\nAdemás, desconfía de códigos que te piden introducir datos personales, contraseñas o información bancaria inmediatamente. Un código legítimo no debería requerir credenciales sensibles sin una razón clara y verificable. Mantén tu dispositivo actualizado y utiliza aplicaciones de escaneo confiables. La educación y la atención constante son tus mejores aliados para disfrutar de esta tecnología sin riesgos innecesarios.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 25,
     "tema_id": "almacenamiento",
     "fecha": "2026-11-21",
