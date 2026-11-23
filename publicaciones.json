@@ -1,5 +1,14 @@
 [
   {
+    "id": 27,
+    "tema_id": "contrasenas",
+    "fecha": "2026-11-23",
+    "titulo": "Cómo crear contraseñas seguras",
+    "contenido": "Crear contraseñas seguras es fundamental para proteger tu información personal y financiera en línea. Una contraseña débil, como \"123456\" o tu fecha de nacimiento, es fácil de adivinar por atacantes. Para mejorar tu seguridad, utiliza combinaciones largas que incluyan letras mayúsculas y minúsculas, números y símbolos. Evita reutilizar la misma clave en diferentes sitios web, ya que si un servicio sufre una filtración, los demás quedarían expuestos.\n\nUn método práctico y memorable es usar frases completas. Por ejemplo, en lugar de una palabra simple, escribe una oración y toma la primera letra de cada término, añadiendo números o símbolos al final. Esto genera claves robustas que son difíciles de descifrar por fuerza bruta. Además, activa siempre la autenticación de dos factores cuando esté disponible. Esta capa extra de seguridad requiere un segundo código, generalmente enviado a tu teléfono, lo que dificulta enormemente el acceso no autorizado a tus cuentas. Mantener estas prácticas simples y constantes es la mejor defensa digital.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 26,
     "tema_id": "codigos_qr",
     "fecha": "2026-11-22",
