@@ -1,5 +1,14 @@
 [
   {
+    "id": 28,
+    "tema_id": "navegadores",
+    "fecha": "2026-11-24",
+    "titulo": "Para qué sirven las actualizaciones del navegador",
+    "contenido": "Las actualizaciones del navegador son mejoras periódicas que el desarrollador aplica para mantener tu experiencia de navegación segura y eficiente. Su función principal es corregir errores de diseño, conocidos como bugs, que podrían causar que una página web no cargue correctamente o que el programa se cierre de forma inesperada.\n\nAdemás, estas actualizaciones son fundamentales para la seguridad. Los creadores de software identifican constantemente vulnerabilidades que podrían permitir a personas malintencionadas acceder a tus datos personales o instalar programas no deseados. Al instalar la versión más reciente, se cierran estas puertas de entrada y se refuerzan las defensas del sistema.\n\nPara aprovechar estos beneficios, te recomendamos mantener la función de actualización automática activada. Si tu navegador no lo hace por defecto, revisa periódicamente la configuración para verificar si hay nuevas versiones disponibles. También es útil reiniciar el navegador tras instalar una actualización para asegurarte de que todos los cambios se apliquen correctamente. Mantener tu herramienta de acceso a internet al día es un hábito sencillo pero esencial para proteger tu privacidad y garantizar un funcionamiento fluido.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 27,
     "tema_id": "contrasenas",
     "fecha": "2026-11-23",
