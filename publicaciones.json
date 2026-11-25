@@ -1,5 +1,14 @@
 [
   {
+    "id": 29,
+    "tema_id": "verificacion",
+    "fecha": "2026-11-25",
+    "titulo": "Qué es la verificación en dos pasos",
+    "contenido": "Qué es la verificación en dos pasos\n\nLa verificación en dos pasos, o autenticación de dos factores, añade una capa extra de seguridad a tus cuentas. No solo dependes de tu contraseña; también debes demostrar tu identidad mediante un segundo método. Esto impide que un atacante acceda a tu información aunque haya conseguido tu clave.\n\nPara activarla, usa aplicaciones de autenticación en tu teléfono, que generan códigos temporales. Evita usar mensajes de texto si es posible, ya que son más vulnerables a interceptaciones. Guarda siempre tus códigos de recuperación en un lugar seguro y físico, no en el mismo dispositivo.\n\nRevisa periódicamente qué dispositivos están conectados a tus cuentas principales. Si notas actividad sospechosa, cambia tu contraseña inmediatamente. Esta práctica sencilla protege tus datos personales, financieros y profesionales. La seguridad digital es responsabilidad de todos. Adoptar estos hábitos reduce significativamente el riesgo de sufrir fraudes o robos de identidad.",
+    "categoria": "Tecnología",
+    "estado": "revision"
+  },
+  {
     "id": 28,
     "tema_id": "navegadores",
     "fecha": "2026-11-24",
